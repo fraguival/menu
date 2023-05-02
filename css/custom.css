@@ -10,6 +10,7 @@ a {
 }
 a:hover {
     background-color: #4e6c81;
+    border-radius: 8px;
 }
 .container {
     max-width: 1280px;
@@ -27,10 +28,11 @@ header {
 }
 nav {
     position: relative;
-    background-color: #400;
+    background-color: none;
     margin-bottom: 12px;
     padding: 12px;
     border-radius: 8px;
+    
 }
 .menu {
     position: absolute;
@@ -41,23 +43,46 @@ nav {
     align-items: center;
     z-index: 2;
     background-color: #400;
-    width: 40%;
+    width: 20%;
     height: 0;
     overflow: hidden;
     border-radius: 12px;
     transition: height .5s linear;
 }
 .gate {
+    position: absolute; 
+    top: 32px; 
+    left: 12px;
     color: #ffcaca;
     font-size: 32px;
     font-weight: 500;
-    /* transform: rotate(90deg); */
+    transform: rotate(90deg);
     cursor: pointer;
-    transform: .4s;
+    transition: .4s;
 }
-/* .turn {
+.turn {
     transform: rotate(180deg);
-} */
+}
 .look {
-    height: 162px;
+    height: 142px;
+}
+main {
+    background-color: #4e6c81;
+    color: #ffcaca;
+    height: 400px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+footer {
+    background-color: #400;
+    color: #ffcaca;
+    font-size: 24px;
+    margin-bottom: 12px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
 }
